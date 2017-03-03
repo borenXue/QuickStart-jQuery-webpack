@@ -47,3 +47,14 @@ forceVendor > notVendor
 notVendor: 'node_modules/selectize'
 notVendor: ['node_modules/selectize']
 ```
+
+
+# CHANGELOG
+
+> v1.0.0 (Realse version v1.0.0)
+
+* 支持多页面开发
+* 加入 ESLint 校验
+* 开发友好: 网页时实显示webpack报错
+* 提供多个配置条件: 是否提取css、是否强制ESLint预校验、可灵活配置某些模块或文件是否打入公共js文件`vendor.js`
+* 修复 webpack 构建过程中的`代码不变, 生成的带md5的文件名却改变`
