@@ -1,3 +1,4 @@
+const path = require('path')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const utils = require('./utils')
@@ -15,8 +16,6 @@ if (config.dev.cssSourceMap) {
   cssLoader += '?sourceMap'
 }
 
- // + config.dev.cssSourceMap ? 'sourceMap' : ''
-
 const devWebpackConfig = merge(commonWebpackConfig, {
   module: {
     loaders: [
@@ -27,6 +26,9 @@ const devWebpackConfig = merge(commonWebpackConfig, {
     ]
   },
   devtool: '#source-map',
+  devServer: {
+    contentBase: path.resolve(__dirname, '../static')
+  },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': process.env.NODE_ENV
