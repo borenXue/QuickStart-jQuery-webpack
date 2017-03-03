@@ -28,7 +28,6 @@ const proWebpackConfig = merge(commonWebpackConfig, {
     new webpack.DefinePlugin({
       'process.env': process.env.NODE_ENV
     }),
-    new webpack.optimize.OccurrenceOrderPlugin(),
     new ExtractTextPlugin(utils.assetsPath('css/[name].[contenthash].css')),
     new WebpackMd5Hash(),
     new webpack.optimize.CommonsChunkPlugin({

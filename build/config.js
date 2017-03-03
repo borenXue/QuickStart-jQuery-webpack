@@ -5,7 +5,7 @@ module.exports = {
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static', // 默认为static, dist下js、css及其他静态资源文件父路径
-    assetsPublicPath: 'static',   // 默认为static, 静态资源目录
+    assetsPublicPath: '',   // 默认为static, 静态资源目录
     productionSourceMap: false,
     uglify: true,
     extractCss: true,
@@ -16,7 +16,7 @@ module.exports = {
   dev: {
     port: 8080,
     assetsSubDirectory: 'static',
-    assetsPublicPath: 'static',
+    assetsPublicPath: '',
     proxyTable: { },
     cssSourceMap: true
   },
