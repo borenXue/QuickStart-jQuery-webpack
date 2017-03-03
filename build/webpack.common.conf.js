@@ -71,6 +71,9 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
+    }),
+    new webpack.DefinePlugin({
+      isDevelopMode: !isPro
     })
   ]
 }
