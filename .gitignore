@@ -12,7 +12,6 @@ todo/
 
 # 忽略最终生成代码目录
 dist/
-build/
 
 # 忽略自动生成的文档
 doc/
@@ -212,7 +211,6 @@ Temporary Items
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## Build generated
-build/
 DerivedData/
 
 ## Various settings

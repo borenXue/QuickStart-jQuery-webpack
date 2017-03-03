@@ -1,0 +1,5 @@
+require('./../../public/main.css')
+require('./../../public/main.js')
+console.log('~_~ jQuery can use directly ~_~')
+console.log(jQuery)
+console.log('add your code here ....')
