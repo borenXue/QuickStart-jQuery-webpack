@@ -1,4 +1,4 @@
-# 理赔产品
+# jQuery + Webpack2 开发环境 Demo
 
 
 > 初始化:
