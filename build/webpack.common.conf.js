@@ -23,6 +23,15 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
+        loader: 'eslint-loader',
+        enforce: 'pre',
+        include: [path.join(__dirname, '..', 'src')],
+        options: {
+          formatter: require('eslint-friendly-formatter')
+        }
+      },
+      {
+        test: /\.js$/,
         loader: 'babel-loader',
         include: [
           path.join(projectRoot, 'src')
