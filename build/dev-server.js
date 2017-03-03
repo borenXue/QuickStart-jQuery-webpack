@@ -29,6 +29,11 @@ Object.keys(proxyTable).forEach(function (context) {
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
   publicPath: webpackConfig.output.publicPath,
+  lazy: false,
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: true
+  },
   stats: {
     colors: true,
     chunks: false
