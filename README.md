@@ -47,12 +47,3 @@ forceVendor > notVendor
 notVendor: 'node_modules/selectize'
 notVendor: ['node_modules/selectize']
 ```
-
-
-  forceLint: true,
-  notVendor: 'node_modules/selectize', // 依赖库强制不打入 vendor: String or Array：主要用于设置npm依赖
-  forceVendor: 'src/public/main.js'
-
-```
-
-```
